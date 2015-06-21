@@ -46,7 +46,7 @@ var margin = {top: 10, left: 10, bottom: 10, right: 10}
   , mapRatio = .5
   , height = width * mapRatio;
 
-var projection = d3.geo.mercator()
+var projection = d3.geo.cylindricalEqualArea()
     .scale(220)
     .translate([width / 2, height / 2 + 80 ]);
 
